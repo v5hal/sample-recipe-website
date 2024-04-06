@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+html {
+  height: 100%;
+  font-family: "Outfit";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+.imagedetails img {
+  height: auto;
+  max-width: 530px;
+  border-radius: 10px;
+  margin: 30px;
+  position: relative;
+}
+
+.imagedetails {
+  display: flex;
+  align-content: center;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: whitesmoke;
+}
+
+.prepration-time {
+  background-color: rgb(236, 165, 210);
+  border-radius: 3%;
+  padding: 5px;
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+  color: hsl(43, 93%, 32%);
+}
+
+.instructions-span {
+  color: #685a5a; /* Light black color */
+  font-weight: bold;
+}
+
+ol li::marker{
+    color: hsl(43, 93%, 32%) !important;
+    margin-bottom: 10px;
+}
+
+#txt1 {
+  font-weight: normal;
+  font-size: small;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+      max-width: 100%; /* Adjust container width for smaller screens */
+      margin: 20px; /* Add some margin for smaller screens */
+    }
+  
+    .imagedetails img {
+      max-width: 100%; /* Make images responsive */
+      margin: 20px 0; /* Adjust image margin */
+    }
+  
+    .prepration-time {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    .headding-phara h1 {
+      font-size: 24px;
+    }
+  
+    .headding-phara p {
+      font-size: 14px;
+    }
+  
+    .ingredients h2,
+    .instructions h2,
+    .nutrition h2 {
+      font-size: 18px;
+    }
+  
+    .instrucions-span {
+      font-size: 14px; /* Adjust font size for instruction spans */
+    }
+  
+    ol li {
+      margin-bottom: 20px; /* Add some space between list items */
+    }
+  
+    .nutrition p,
+    .nutrition hr {
+      font-size: 14px; /* Adjust font size for nutrition section */
+    }
+  }
+  
